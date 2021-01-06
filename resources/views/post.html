@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title>Permission</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="Bootstrap/js/respond.js"></script>
+</head>
+<center>
+<div class="container">
+<div class="row">
+
+<img src="img/log.png">
+
+</div>
+<br>
+
+<div class="img-thumbnail">
+
+<form class="form-inline" action="login.php" method="post" enctype="multipart/form-data" >
+  <div class="form-group">
+    <label class="sr-only" for="">نام کاربری</label>
+    <input type="text" class="form-control" name="username" placeholder="نام کاربری">
+  </div>
+   <br>
+<br>
+  <div class="form-group">
+    <label class="sr-only" for="exampleInputPassword3">رمز عبور</label>
+    <input type="text" class="form-control" name="password" placeholder="رمز عبور">
+  </div>
+  <br>
+<br>
+ <label class="radio-inline">
+  <input type="radio" name="level" id="inlineRadio1" value="master"> رئیس
+</label>
+<label class="radio-inline">
+  <input type="radio" name="level" id="inlineRadio2" value="manager">مدیر
+</label>
+<label class="radio-inline">
+  <input type="radio" name="level" id="inlineRadio3" value="boss"> کارمند
+</label>
+<br>
+<br>
+  <button type="submit" class="btn btn-success">ورود</button>
+</form>
+
+</div>
+</center>
+</div>
+</html>

@@ -1,0 +1,195 @@
+/*
+ * Vahid Majidi
+ * Powered By اسکریپت.com
+ */
+
+#menu *
+{
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul.menu
+{
+	float: right;
+	font-family: tahoma;
+	font-size: 14px;
+}
+
+	#menu ul.menu li
+	{
+		position: relative;
+		float: right;
+		list-style-type: none;
+	}
+	
+		#menu ul.menu li a
+		{
+			position: relative;
+			display: block;
+			line-height: 18px;
+			padding: 12px 20px;
+			text-decoration: none;
+			z-index: 100;
+			text-align: right;
+			-webkit-transition: all 0.1s linear;
+			-moz-transition: all 0.1s linear;
+			-o-transition: all 0.1s linear;
+			transition: all 0.1s linear;
+		}
+
+			#menu ul.menu > li:last-child > a
+			{
+				border-left: 0;
+				-webkit-border-top-left-radius: 6px;
+				-webkit-border-bottom-left-radius: 6px;
+				-moz-border-radius-topleft: 6px;
+				-moz-border-radius-bottomleft: 6px;
+				border-top-left-radius: 6px;
+				border-bottom-left-radius: 6px;
+			}
+			
+			#menu ul.menu > li:first-child > a
+			{
+				border-right: 0;
+				-webkit-border-top-right-radius: 6px;
+				-webkit-border-bottom-right-radius: 6px;
+				-moz-border-radius-topright: 6px;
+				-moz-border-radius-bottomright: 6px;
+				border-top-right-radius: 6px;
+				border-bottom-right-radius: 6px;
+			}
+
+/** Sub Menu - Ghesmat 2 **/
+
+#menu ul.menu li ul.sub-menu
+{
+	position: relative;
+	display: none;
+	margin: 0;
+	padding: 0;
+	right: 0;
+}
+
+	#menu ul.menu li:hover ul.sub-menu
+	{
+		display: block;
+		float: left;
+		position: absolute;
+		z-index: 200;
+	}
+	
+		#menu ul.menu li ul.sub-menu > li:first-child
+		{
+			margin: 6px 0 0 0;
+		}
+		
+		#menu ul.menu li ul.sub-menu li a
+		{
+			width: 160px;
+			display: block;
+		}
+		
+			#menu ul.menu li ul.sub-menu li:first-child > a
+			{
+				border-top: 0;
+				-webkit-border-top-left-radius: 6px;
+				-webkit-border-top-right-radius: 6px;
+				-moz-border-radius-topleft: 6px;
+				-moz-border-radius-topright: 6px;
+				border-top-left-radius: 6px;
+				border-top-right-radius: 6px;
+			}
+			
+			#menu ul.menu li ul.sub-menu li:last-child > a
+			{
+				border-bottom: 0;
+				-webkit-border-bottom-left-radius: 6px;
+				-webkit-border-bottom-right-radius: 6px;
+				-moz-border-radius-bottomleft: 6px;
+				-moz-border-radius-bottomright: 6px;
+				border-bottom-left-radius: 6px;
+				border-bottom-right-radius: 6px;
+			}
+			
+		#menu ul.menu li ul.sub-menu li a:hover
+		{
+			width: 160px;
+			display: block;
+		}
+	
+/** Sub Menu - Ghesmat 3 **/
+
+#menu ul.menu li ul.sub-menu li ul
+{
+	position: relative;
+	display: none;
+	right: 180px;
+}
+
+		#menu ul.menu li ul.sub-menu li ul li
+		{
+			margin: 0 6px 0 0;
+		}
+
+	#menu ul.menu li ul.sub-menu li:hover ul
+	{
+		display: block;
+		float: left;
+		position: absolute;
+		top: 0;
+	}
+
+		#menu ul.menu li ul.sub-menu li ul li a
+		{
+			width: 160px;
+			display: block;
+		}
+/** Colour Styles **/
+
+#menu ul.menu li a
+{
+	background: #09F;
+	color: #FFF;
+}
+
+#menu ul.menu > li > a
+{
+	border-left: 1px solid #26A8FF;
+	border-right: 1px solid #0082D9;
+}
+
+#menu ul.menu li:hover > a, #menu ul.menu li a:hover
+{
+	color: #000;
+	background: #FFF;
+}
+
+#menu ul.menu li ul.sub-menu li a
+{
+	border-top: 1px solid #26A8FF;
+	border-bottom: 1px solid #0082D9;
+}
+
+/** Arrow Styles **/
+
+#menu ul.menu > li > a.haschild
+{
+	padding-right: 30px;
+	background: #09F url("../images/down.png") no-repeat right center;
+}
+
+	#menu ul.menu > li:hover > a.haschild
+	{
+		background: #FFF url("../images/down.png") no-repeat right center;
+	}
+
+#menu ul.menu li ul.sub-menu li a.haschild
+{
+	background: #09F url("../images/left.png") no-repeat left center;
+}
+
+	#menu ul.menu li:hover ul.sub-menu li:hover a.haschild
+	{
+		background: #FFF url("../images/left.png") no-repeat left center;
+	}

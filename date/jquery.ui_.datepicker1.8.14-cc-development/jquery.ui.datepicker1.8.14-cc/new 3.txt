@@ -1,0 +1,26 @@
+  $table->increments('id');
+            $table->timestamps();
+            $table->string('day');
+            $table->string('time');
+            $table->Time('fhour');
+            $table->Time('thour');
+            $table->integer('code');
+            $table->string('date');
+			
+			drtime
+			
+			
+			---------------------------------------------
+			
+			timetable
+			
+			
+			
+			
+			 $table->increments('id');
+            $table->timestamps();
+            $table->integer('pcode');
+            $table->integer('bcode');
+            $table->Date('date');
+            $table->Time('hour');
+            $table->string('bimari');
